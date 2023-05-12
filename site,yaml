@@ -3,6 +3,9 @@
   become: yes
 
   tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
     - name: Install HAProxy
       apt:
         name: haproxy
@@ -17,6 +20,9 @@
 - hosts: webservers
   become: yes
   tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
     - name: Update apt cache
       apt:
         update_cache: yes
