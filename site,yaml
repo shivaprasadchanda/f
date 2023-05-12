@@ -64,5 +64,5 @@
 
     - name: Copy Flask app file
       copy:
-        src: ./app.py
+        src: application2.py
         dest: /home/ubuntu/flask-app/venv/app.py
